@@ -27,6 +27,10 @@ body {
     margin: 10px 50px;
 }
 
+.PushButtononSiteClass:hover{
+    background-color: gray;
+}
+
 .BlogTitleSpace{
     margin: -950px 775px;
     width: 500px;         
