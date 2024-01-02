@@ -1,24 +1,24 @@
 body {
-    background-color: darkgrey;
-    font-size: 25px;
+  background-color: darkgrey;
+  font-size: 25px;
 }
 
-.AboutSiteTitle{
-    height: 70px;
-    width: 250px;
+.AboutSiteTitle {
+  height: 70px;
+  width: 250px;
 
-    margin: 0 850px;
+  margin: 0 850px;
 }
 
-.ReturnToMainSiteButton{
-    background-color: gray;
-    
-    width: 300px;
-    height: 60px;
+.ReturnToMainSiteButton {
+  background-color: gray;
 
-    font-size: 30px;
+  width: 300px;
+  height: 60px;
+
+  font-size: 30px;
 }
 
-.ReturnToMainSiteButton:hover{
-    background-color: darkgray;
+.ReturnToMainSiteButton:hover {
+  background-color: darkgray;
 }
