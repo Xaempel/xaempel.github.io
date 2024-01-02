@@ -26,3 +26,21 @@ body {
     height: 50px; 
     margin: 10px 50px;
 }
+
+.BlogTitleSpace{
+    margin: -950px 775px;
+    width: 500px;         
+    height: 900px; 
+
+    text-align: center;
+    font-size: 30px;
+}
+
+.ArticlesAreaTitleSpace{
+    margin: 150px 280px;
+    width: 1500px;         
+    height: 650px; 
+     
+    text-align: center;
+    font-size: 30px;
+}
