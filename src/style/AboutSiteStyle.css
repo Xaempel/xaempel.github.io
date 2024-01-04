@@ -9,16 +9,3 @@ body {
 
   margin: 0 850px;
 }
-
-.ReturnToMainSiteButton {
-  background-color: gray;
-
-  width: 300px;
-  height: 60px;
-
-  font-size: 30px;
-}
-
-.ReturnToMainSiteButton:hover {
-  background-color: darkgray;
-}

@@ -9,42 +9,11 @@ body {
   margin: 0 -10px;
 }
 
-.MenuTitleLabel {
-  background-color: black;
-  color: whitesmoke;
-  text-align: center;
-}
-
-.PushButtononSiteClass {
-  border-radius: 8px;
-  background-color: darkgrey;
-  text-align: center;
-  font-size: 33px;
-  font-family: "Times New Roman", Times, serif;
-  margin-right: -300px;
-  width: 200px;
-  height: 50px;
-  margin: 10px 50px;
-}
-
-.PushButtononSiteClass:hover {
-  background-color: gray;
-}
-
 .BlogTitleSpace {
-  margin: -950px 775px;
-  width: 500px;
-  height: 900px;
+  margin: -50% 40%;
+  width: 30%;
+  height: 30%;
 
   text-align: center;
-  font-size: 30px;
-}
-
-.ArticlesAreaTitleSpace {
-  margin: 150px 280px;
-  width: 1500px;
-  height: 650px;
-
-  text-align: center;
-  font-size: 30px;
+  font-size: 35px;
 }

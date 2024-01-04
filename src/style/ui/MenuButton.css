@@ -1,0 +1,13 @@
+.MenuButton {
+  border-radius: 8px;
+  background-color: darkgrey;
+  text-align: center;
+  font-size: 33px;
+  font-family: "Times New Roman", Times, serif;
+  width: 200px;
+  height: 50px;
+}
+
+.MenuButton:hover {
+  background-color: gray;
+}
