@@ -2,30 +2,30 @@ body {
   background-color: darkgrey;
 }
 
-.BlogTitle{
+.BlogTitle {
   font-size: 700%;
   margin: 0 30%;
 }
 
-.UpMenuButton{
+.UpMenuButton {
   background-color: dimgrey;
 }
 
-.LatestArticlesHeader{
+.LatestArticlesHeader {
   font-size: 275%;
 }
 
 @media screen and (max-width: 780px) {
-  .BlogTitle{
+  .BlogTitle {
     font-size: 250%;
     margin: 0 10%;
   }
-  
-  .UpMenuButton{
+
+  .UpMenuButton {
     background-color: dimgrey;
   }
-  
-  .LatestArticlesHeader{
+
+  .LatestArticlesHeader {
     font-size: 150%;
   }
 }
