@@ -14,3 +14,18 @@ body {
 .LatestArticlesHeader{
   font-size: 275%;
 }
+
+@media screen and (max-width: 780px) {
+  .BlogTitle{
+    font-size: 250%;
+    margin: 0 10%;
+  }
+  
+  .UpMenuButton{
+    background-color: dimgrey;
+  }
+  
+  .LatestArticlesHeader{
+    font-size: 150%;
+  }
+}
