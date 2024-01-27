@@ -1,11 +1,8 @@
 body {
-  background-color: darkgrey;
+  background: linear-gradient(to left, #e66465, #9198e5);
   font-size: 25px;
 }
 
 .AboutSiteTitle {
-  height: 70px;
-  width: 250px;
-
-  margin: 0 850px;
+  margin: 0 45%;
 }

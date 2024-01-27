@@ -1,6 +1,6 @@
 .MenuButton {
   border-radius: 8px;
-  background-color: darkgrey;
+  background: linear-gradient(to right, #00ff99,#cc33ff);
   text-align: center;
   font-size: 33px;
   font-family: "Times New Roman", Times, serif;
@@ -9,13 +9,15 @@
 }
 
 .MenuButton:hover {
-  background-color: gray;
+  background: linear-gradient(to left, #7700b3, #b38600);
+  transition: transform 0.4s;
+  transform: scale(0.9) rotate(-5deg);
 }
 
 @media only screen and (max-width: 700px) {
   .MenuButton {
     border-radius: 8px;
-    background-color: darkgrey;
+    background: linear-gradient(to right, #00ff99,#cc33ff);
     text-align: center;
     font-size: 80%;
     font-family: "Times New Roman", Times, serif;
