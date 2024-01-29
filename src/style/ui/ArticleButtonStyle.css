@@ -1,0 +1,24 @@
+.ArticleButton {
+  background: linear-gradient(#8080ff, #00ccff);
+  width: 20%;
+  height: 50px;
+  border-radius: 10%;
+
+  color: black;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.ArticleButton:hover {
+  background: linear-gradient(#ff66ff, #006666);
+  transition: transform 0.4s;
+  transform: scale(0.9) rotate(5deg);
+}
+
+@media only screen and (max-width: 700px) {
+  .ArticleButton {
+    width: 40%;
+    height: 50px;
+    font-size: 14px;
+  }
+}
