@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
+    <script src="./js/translationIndex.js"></script>
     <script src="./js/translator.js"></script>
 
     <h1 id="MainSiteTitle">Xaempel Blob</h1>
@@ -23,5 +24,12 @@
         </li>
       </ul>
     </nav>
+
+    <label for="LanguageChoiceWidget"> Wybierz język </label>
+    <select name="" id="LanguageChoiceWidget">
+      <option value="PL">Polski</option>
+      <option value="ENG">Angielski</option>
+    </select>
+    <button onclick="ChangeLanguage()">Zmień język</button>
   </body>
 </html>

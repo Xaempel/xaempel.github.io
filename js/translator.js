@@ -1,1 +1,6 @@
-console.log('this is test js in Github Page')
+function ChangeLanguage() {
+  let selectedLanguage = document.getElementById('LanguageChoiceWidget').value
+  console.log(selectedLanguage)
+}
+
+translateIndextoPL()

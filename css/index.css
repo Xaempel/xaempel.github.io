@@ -1,40 +1,53 @@
-body
-{
-    background-color: gray;
+body {
+  background-color: gray;
 }
 
-h1{
-    color: white;
+h1 {
+  color: white;
 
-    text-align: center;
+  text-align: center;
 
-    padding: 3%;
-    font-size: 500%;
+  padding: 3%;
+  font-size: 500%;
 }
 
 nav {
-    background-color: darkgray;
-    padding: 2%;
+  background-color: darkgray;
+  padding: 2%;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 
-    padding: 14px 20px;
-    display: block;
+  padding: 14px 20px;
+  display: block;
 
-    font-size: 150%;
+  font-size: 150%;
 }
 
 nav ul li a:hover {
-    background-color: teal;
+  background-color: teal;
+}
+
+label {
+  font-size: 150%;
+}
+
+select {
+    font-size: 100%;
+    background-color: dimgrey;
+}
+
+button{
+    font-size: 100%;
+    background-color: dimgrey;
 }
