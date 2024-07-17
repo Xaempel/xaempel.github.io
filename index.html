@@ -17,19 +17,19 @@
     <nav>
       <ul>
         <li>
-          <a href="site/articles.html"> Artykuły </a>
+          <a href="site/articles.html" id="ArticlesButton"> Artykuły </a>
         </li>
         <li>
-          <a href="site/aboutme.html"> O Mnie </a>
+          <a href="site/aboutme.html" id="AboutMe"> O Mnie </a>
         </li>
       </ul>
     </nav>
 
-    <label for="LanguageChoiceWidget"> Wybierz język </label>
+    <label for="LanguageChoiceWidget" id="SelectLanguage">Wybierz Język</label>
     <select name="" id="LanguageChoiceWidget">
-      <option value="PL">Polski</option>
-      <option value="ENG">Angielski</option>
+      <option value="PL" id="PolishOption">Polski</option>
+      <option value="ENG" id="EnglishOption">Angielski</option>
     </select>
-    <button onclick="ChangeLanguage()">Zmień język</button>
+    <button onclick="ChangeLanguage()" id="ChangeLanguage">Zmień Język</button>
   </body>
 </html>

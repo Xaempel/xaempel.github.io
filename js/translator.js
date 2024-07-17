@@ -1,6 +1,12 @@
 function ChangeLanguage() {
-  let selectedLanguage = document.getElementById('LanguageChoiceWidget').value
-  console.log(selectedLanguage)
-}
+  let selectedLanguage = document.getElementById("LanguageChoiceWidget").value;
 
-translateIndextoPL()
+  switch (selectedLanguage) {
+    case "PL":
+      translateIndextoPL();
+      break;
+    case "ENG":
+      translateIndextoENG();
+      break;
+  }
+}
