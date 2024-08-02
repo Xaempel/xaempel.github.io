@@ -1,12 +1,16 @@
+var selectedLanguages = "PL";
+
 function ChangeLanguage() {
   let selectedLanguage = document.getElementById("LanguageChoiceWidget").value;
 
   switch (selectedLanguage) {
     case "PL":
-      translateIndextoPL();
+      selectedLanguages = "PL";
+      translateIndex();
       break;
     case "ENG":
-      translateIndextoENG();
+      selectedLanguages = "ENG";
+      translateIndex();
       break;
   }
 }

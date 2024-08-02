@@ -31,3 +31,14 @@ function translateIndextoENG() {
   englishOptionHook.innerText = "English";
   changeLanguage.innerHTML = "Change Language";
 }
+
+function translateIndex() {
+  switch (selectedLanguages) {
+    case "PL":
+      translateIndextoPL();
+      break;
+    case "ENG":
+      translateIndextoENG();
+      break;
+  }
+}
