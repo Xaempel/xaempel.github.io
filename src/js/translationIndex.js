@@ -1,35 +1,21 @@
 let getElem = (id) => document.getElementById(id);
 
 function translateIndextoPL() {
-  let articlesButton = getElem("ArticlesButton");
-  let aboutMe = getElem("AboutMe");
-  let selectLanguage = getElem("SelectLanguage");
-  let polishOption = getElem("PolishOption");
-  let englishOptionHook = getElem("EnglishOption");
-  let changeLanguage = getElem("ChangeLanguage");
-
-  articlesButton.innerText = "Artykuły";
-  aboutMe.innerText = "O Mnie";
-  selectLanguage.innerText = "Wybierz Język";
-  polishOption.innerText = "Polski";
-  englishOptionHook.innerText = "Angielski";
-  changeLanguage.innerHTML = "Zmień Język";
+  getElem("ArticlesButton").innerText = "Artykuły";
+  getElem("AboutMe").innerText = "O Mnie";
+  getElem("SelectLanguage").innerText = "Wybierz Język";
+  getElem("PolishOption").innerText = "Polski";
+  getElem("EnglishOption").innerText = "Angielski";
+  getElem("ChangeLanguage").innerText = "Zmień Język";
 }
 
 function translateIndextoENG() {
-  let articlesButton = getElem("ArticlesButton");
-  let aboutMe = getElem("AboutMe");
-  let selectLanguage = getElem("SelectLanguage");
-  let polishOption = getElem("PolishOption");
-  let englishOptionHook = getElem("EnglishOption");
-  let changeLanguage = getElem("ChangeLanguage");
-
-  articlesButton.innerText = "Aricles";
-  aboutMe.innerText = "About me";
-  selectLanguage.innerText = "Select Language";
-  polishOption.innerText = "Polish";
-  englishOptionHook.innerText = "English";
-  changeLanguage.innerHTML = "Change Language";
+  getElem("ArticlesButton").innerText = "Aricles";
+  getElem("AboutMe").innerText = "About me";
+  getElem("SelectLanguage").innerText = "Select Language";
+  getElem("PolishOption").innerText = "Polish";
+  getElem("EnglishOption").innerText = "English";
+  getElem("ChangeLanguage").innerText = "Change Language";
 }
 
 function translateIndex() {
