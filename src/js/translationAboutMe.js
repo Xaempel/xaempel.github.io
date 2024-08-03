@@ -1,19 +1,16 @@
 let getElem = (id) => document.getElementById(id);
 
-function translateAboutMePL() {
-  console.log("test 1");
-}
-
 function translateAboutMeENG() {
-  console.log("test 2");
+  getElem("TitleofAboutMeSite").innerText = "About me";
+  getElem("MySkills").innerText = "My Skills";
+  getElem("GeneralSkills").innerText = "General Skills";
+  getElem("ProgramingLanguages").innerText = "My Programing Languages";
+  getElem("MyProjects").innerText = "My Projects";
+  getElem("MyNextPlans").innerText = "My Next Plans";
 }
 
 function translateAboutMe() {
-  console.log(selectedLanguages);
   switch (selectedLanguages) {
-    case "PL":
-      translateAboutMePL();
-      break;
     case "ENG":
       translateAboutMeENG();
       break;
