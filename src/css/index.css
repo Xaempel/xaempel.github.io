@@ -7,7 +7,7 @@ body {
 
   text-align: center;
 
-  padding: 3%;
+  padding-top: 0.5vh;
   font-size: 500%;
 }
 
@@ -17,6 +17,7 @@ body {
   height: 500px;
   margin: auto;
   justify-content: center;
+  backdrop-filter: blur(8px);
 }
 
 #LatestArticlesHeader {
