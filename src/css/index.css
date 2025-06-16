@@ -1,71 +1,59 @@
 body {
-  background-color: #c9c8c3;
+  background-color: rgb(117, 43, 145);
+  font-family: 'Times New Roman', Times, serif';
 }
 
-#MainSiteTitle {
-  color: black;
-
+header {
   text-align: center;
-
-  padding-top: 0.5vh;
-  font-size: 500%;
-}
-
-#frameofLatestArticles {
-  background-color: #474a48;
-  width: 50%;
-  height: 500px;
-  margin: auto;
-  justify-content: center;
-  backdrop-filter: blur(8px);
-}
-
-#LatestArticlesHeader {
+  font-size: 2em;
   color: white;
-
-  text-align: center;
-  font-size: 500%;
 }
 
 nav {
-  background-color: darkred;
-  padding: 2%;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-
-  padding: 14px 20px;
-  display: block;
-
-  font-size: 150%;
-}
-
-nav ul li a:hover {
-  background-color: teal;
-}
-
-label {
-  font-size: 150%;
-}
-
-select {
-  font-size: 100%;
-  background-color: #474a48;
-  color: white;
+  background-color: white;
+  border-radius: 2em;
+  height: 4rem;
 }
 
 button {
-  font-size: 100%;
-  background-color: #474a48;
+  background-color: black;
+  border-style: none;
   color: white;
+  font-size: 0.5em;
+  border-radius: 2em;
+
+  height: 2rem;
+  width: 10rem;
+
+  transition: background-color 0.4s;
+}
+
+button:hover {
+  background-color: rgb(121, 46, 148);
+}
+
+button:active {
+  background-color: rgb(60, 46, 148);
+}
+
+main{
+  color: white;
+}
+
+footer{
+  color: white;
+  font-size: 1.5em;
+}
+
+a{
+   text-decoration: none;
+   color: white;
+}
+
+#GHAccountButton{
+  background-color: rgb(58, 150, 120); 
+}
+
+#GHAccountButton:hover{
+  background-color: rgb(71, 55, 171);
 }

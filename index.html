@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Xaempel Blob</title>
     <meta name="description" content="It's site's sketch" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="stylesheet" href="src/css/index.css" />
   </head>
 
   <body>
-    <script src="./src/js/translationIndex.js"></script>
-    <script src="./src/js/translator.js"></script>
-
     <header>
-      <h1 id="MainSiteTitle">Xaempel Blob</h1>
+      <h1>Xaempel Blob</h1>
       <nav>
-        <ul>
-          <li>
-            <a href="src/site/articles.html" id="ArticlesButton"> Artykuły </a>
-          </li>
-          <li>
-            <a href="src/site/aboutme.html" id="AboutMe"> O Mnie </a>
-          </li>
-        </ul>
+        <button>Articles</button>
+
+        <button>About me</button>
+
+        <button>About this site</button>
+        <button id="GHAccountButton">
+        <a href="https://github.com/Xaempel" target="_blank">My Github account</a>
+        </button>
       </nav>
     </header>
-
-    <div id="frameofLatestArticles">
-      <h1 id="LatestArticlesHeader">Najnowsze Artykuły</h1>
-    </div>
+    <main>
+      <p>
+        Yep I deleted all code of this blog and I'll start build this from new
+        code base :(
+      </p>
+    </main>
 
     <footer>
-      <label for="LanguageChoiceWidget" id="SelectLanguage"
-        >Wybierz Język</label
-      >
-      <select name="" id="LanguageChoiceWidget">
-        <option value="PL" id="PolishOption">Polski</option>
-        <option value="ENG" id="EnglishOption">Angielski</option>
-      </select>
-      <button onclick="ChangeLanguage()" id="ChangeLanguage">
-        Zmień Język
-      </button>
+      <details>
+        <summary>Select your language</summary>
+        <label>
+          <input type="radio" name="language" value="pl" />
+          Polish </label
+        ><br />
+
+        <label>
+          <input type="radio" name="language" value="en" />
+          English </label
+        ><br />
+      </details>
     </footer>
   </body>
-  
 </html>
