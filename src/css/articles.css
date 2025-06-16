@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(117, 43, 145);
+  font-family: 'Times New Roman', Times, serif';
+}
+
+header{
+  display: flex;
+  justify-content: center;
+
+  color: white;
+  font-size: 2em;
+}

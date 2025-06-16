@@ -1,0 +1,17 @@
+.ReturnButton {
+  height: 2rem;
+  width: 13rem;
+
+    border-radius: 0.5em;
+
+  font-size: 1em;
+  color: white;
+
+  background-color: rgb(58, 150, 120);
+  transition: background-color 0.3s;
+}
+
+.ReturnButton:hover {
+  background-color: aqua;
+  color: black;
+}
