@@ -14,11 +14,11 @@
     <header>
       <h1>Xaempel Blob</h1>
       <nav>
-        <button onclick="enterToArticlesSite()">Articles</button>
+        <button onclick="enterToArticlesSite()" id="articles-button">Articles</button>
 
-        <button>About me</button>
+        <button id="about-me-button">About me</button>
 
-        <button>About this site</button>
+        <button id="about-this-site">About this site</button>
         <button id="GHAccountButton">
         <a href="https://github.com/Xaempel" target="_blank">My Github account</a>
         </button>
@@ -33,19 +33,21 @@
 
     <footer>
       <details>
-        <summary>Select your language</summary>
+        <summary id="select-language-summary">Select your language</summary>
         <label>
-          <input type="radio" name="language" value="pl" />
+          <input type="radio" name="language" value="pl" onchange="languageChanged(event)"/>
           Polish </label
         ><br />
 
         <label>
-          <input type="radio" name="language" value="en" />
+          <input type="radio" name="language" value="en" onchange="languageChanged(event)"/>
           English </label
         ><br />
       </details>
     </footer>
 
     <script src="src/js/index.js" ></script>
+    <script src="src/js/ChangePageLanguage/changeIndexPageLanguage.js"></script>
+    <script src="src/js/ChangeLanguage.js" defer ></script>
   </body>
 </html>
