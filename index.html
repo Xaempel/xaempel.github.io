@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Xaempel Blob</title>
-    <meta name="description" content="It's site's sketch" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="src/css/index.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Xaempel Blob</title>
+  <meta name="description" content="It's site's sketch" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
-    <header>
-      <h1>Xaempel Blob</h1>
-      <nav>
-        <button onclick="enterToArticlesSite()" id="articles-button">Articles</button>
+  <link rel="stylesheet" href="src/css/index.css" />
+</head>
 
-        <button id="about-me-button" onclick="enterToAboutMeSite()">About me</button>
+<body>
+  <header>
+    <h1>Xaempel Blob</h1>
+    <nav>
+      <button onclick="enterToArticlesSite()" id="articles-button">Articles</button>
 
-        <button id="about-this-site">About this site</button>
-        <button id="GHAccountButton">
+      <button id="about-me-button" onclick="enterToAboutMeSite()">About me</button>
+
+      <button id="about-this-site" onclick="enterToAboutThisSite()">About this site</button>
+      <button id="GHAccountButton">
         <a href="https://github.com/Xaempel" target="_blank">My Github account</a>
-        </button>
-      </nav>
-    </header>
-    <main>
-      <p>
-        Yep I deleted all code of this blog and I'll start build this from new
-        code base :(
-      </p>
-    </main>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <p>
+      Yep I deleted all code of this blog and I'll start build this from new
+      code base :(
+    </p>
+  </main>
 
-    <footer>
-      <details>
-        <summary id="select-language-summary">Select your language</summary>
-        <label>
-          <input type="radio" name="language" value="pl" onchange="languageChanged(event)"/>
-          Polish </label
-        ><br />
+  <footer>
+    <details>
+      <summary id="select-language-summary">Select your language</summary>
+      <label>
+        <input type="radio" name="language" value="pl" onchange="languageChanged(event)" />
+        Polish </label><br />
 
-        <label>
-          <input type="radio" name="language" value="en" onchange="languageChanged(event)"/>
-          English </label
-        ><br />
-      </details>
-    </footer>
+      <label>
+        <input type="radio" name="language" value="en" onchange="languageChanged(event)" />
+        English </label><br />
+    </details>
+  </footer>
 
-    <script src="src/js/index.js" ></script>
-    <script src="src/js/ChangePageLanguage/changeIndexPageLanguage.js"></script>
-    <script src="src/js/ChangeLanguage.js" defer ></script>
-  </body>
+  <script src="src/js/index.js"></script>
+  <script src="src/js/ChangePageLanguage/changeIndexPageLanguage.js"></script>
+  <script src="src/js/ChangeLanguage.js" defer></script>
+</body>
+
 </html>

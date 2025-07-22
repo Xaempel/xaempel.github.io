@@ -5,3 +5,7 @@ function enterToArticlesSite(){
 function enterToAboutMeSite(){
     window.location.href = "src/html/AboutMe.html";
 }
+
+function enterToAboutThisSite(){
+    window.location.href = "src/html/AboutThisSite.html";
+}
