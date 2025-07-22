@@ -9,6 +9,7 @@ let techstackCpp = document.getElementById("tech-stack-cpp");
 let techStackQt = document.getElementById("tech-stack-qt");
 let techstackVue = document.getElementById("tech-stack-vue");
 let techstackBasicWebstack = document.getElementById("tech-stack-basicwebstack");
+let returnAboutMeButton = document.getElementById("return-about-me-button");
 
 if(currentLang === "pl"){
     changeAboutMePagetoPL();
@@ -24,4 +25,6 @@ function changeAboutMePagetoPL(){
     techStackQt.innerText = "Qt na poziomie początkującym";
     techstackVue.innerText = "Vue na poziomie początkującym";
     techstackBasicWebstack.innerText = "HTML, CSS i JS na poziomie początkującym";
+
+    returnAboutMeButton.innerText = "Wróć na główna stronę";
 }
