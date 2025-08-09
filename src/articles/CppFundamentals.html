@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Fundamentals of C++</title>
+    <link rel="stylesheet" href="../css/sites-sketch/basicSketch.css">
+    <link rel="stylesheet" href="../css/sites-sketch/articlesSketch.css">
+    <link rel="stylesheet" href="../css/components/ReturnButton.css">
+</head>
+
+<body>
+    <h1>
+        Fundamentals of C++
+    </h1>
+
+    <main>
+        <h2>Beginning</h2>
+        <p>
+            To begin writing C++ code, all you need is a C++ compiler. Two popular choices are <b>g++ (part of GCC)</b>
+            and <b>Clang</b>. I won't provide a tutorial on how to install a compiler here — it's easy to find one
+            online, or you can use an online C++ compiler to get started quickly. If you already have a compiler, let's
+            begin!
+        </p>
+
+        <h2>First Step into C++ - Lasciate ogni speranza, voi ch'entrate</h2>
+        <p>
+            The first program that almost everyone writes when learning a programming language is the classic Hello
+            World app. This program is very simple because it contains only one instruction: it displays text on the
+            terminal screen.
+            In C++, such a program looks like this:
+        <pre><code>
+            #include &lt;iostream&gt;
+
+            int main() {
+                std::cout &lt&lt "Hello, World\n";
+                return 0;
+            }
+        </code></pre>
+        </p>
+        <p>
+            At first glance, this code might seem intimidating, but it's actually very straight forward. Let's break it
+            down line by line:
+        <ul>
+            <li>
+                #include &ltiostream&gt - In short, #include allows us to use predefined types, functions, or algorithms
+                from
+                the standard library. In this case, we are adding basic input/output functionality to our program.
+            </li>
+
+            <li>
+                int main() - This is the entry point of the program. The curly braces {} enclose the code that will
+                be executed when the program runs.
+            </li>
+
+            <li>
+                std::cout &lt&lt "Hello World" ; - This instruction displays text on the terminal. The std::cout &lt&lt
+                part
+                sends the text inside the quotes ("") to the output. </li>
+
+            <li>
+                \n - This symbol tells the program to insert a new line into the output.
+            </li>
+        </ul>
+        </p>
+
+        <h2>Next Steps in C++ - Variables and Basic Arithmetic Operators</h2>
+        <p>
+            Now that you know how to print output to the terminal, the next step is to learn about variables and
+            arithmetic operations.
+            A variable is like a box where you can store data.
+            In C++, there are many different types of variables, but to get started you only need three or four basic
+            ones: int, float, char, and std::string.
+
+        <ul>
+            <li>
+                int - stores integer values like 9, 12, 32, 10512.
+            </li>
+
+            <li>
+                float - stores floating-point values like 1.23, 125.125, 512.3.
+            </li>
+
+            <li>
+                char - stores a single character like 'a', 'b', 'y'.
+            </li>
+
+            <li>
+                std::string - stores a sequence of characters (text). To use strings, you must include the &ltstring&gt
+                header.
+            </li>
+        </ul>
+
+        Here's an example:
+        <pre>
+            <code>
+                #include &ltiostream&gt
+                #include &ltstring&gt
+
+                int main() {
+                    int a {5};
+                    float b {3.12};
+                    char ch {'A'};
+                    std::string sentence {"This is a sentence"};
+                }
+            </code>
+        </pre>
+
+        Explanation:
+        <ul>
+            <li>
+                #include &ltiostream&gt - You already know this from the previous example.
+            </li>
+
+            <li>
+                #include &ltstring&gt - Adds support for using std::string.
+            </li>
+
+            <li>
+                int a, float b, char ch – Declare variables of types int, float, and char.
+            </li>
+
+            <li>
+                std::string sentence - Declares a variable of type std::string. The std:: prefix means the type comes
+                from the C++ standard library (just like std::cout).
+                This example shows how to initialize variables in C++ using curly braces {}. This method is preferred in
+                modern C++ because it is safer and more predictable than using =.
+                You can also write:
+                <pre>
+                    <code>
+                        int number = 5;
+                        float pi = 3.14;
+                    </code>
+                </pre>
+                but {} is recommended.
+            </li>
+        </ul>
+
+        <h3>Printing Variables</h3>
+        <p>
+            You can print variables to the terminal like this:
+        <pre>
+                <code>
+                #include &ltiostream&gt
+                #include &ltstring&gt
+
+                int main() {
+                    int a {5};
+                    // Prints 5 
+                    std::cout &lt&lt a &lt&lt "\n";
+
+                    a = 2;
+                    // Prints 2
+                    std::cout &lt&lt a &lt&lt "\n";
+
+                    float b {3.15};
+                    // Prints 3.15
+                    std::cout &lt&lt b &lt&lt "\n";
+
+                    std::string str {"This is a sentence"};
+                    // Prints "This is a sentence"
+                    std::cout &lt&lt str &lt&lt "\n";
+                }
+                </code>
+            </pre>
+        Key points:
+        <ul>
+            <li>
+                // - Starts a comment. Comments are for programmers and are ignored by the compiler.
+            </li>
+
+            <li>
+                std::cout &lt&lt a &lt&lt "\n"; - Prints the value of a and moves to the next line.
+            </li>
+
+            <li>
+                a = 2; - Assigns a new value to a variable. You can do the same with float or std::string.
+            </li>
+        </ul>
+        </p>
+
+        <h3>Arithmetic in C++</h3>
+        <p>Now let's look at some basic arithmetic operations:</p>
+
+        <pre>
+            <code>
+                #include &ltiostream&gt
+
+                int main() {
+                    int a {6};
+
+                    // Addition
+                    a = a + a; // 6 + 6 = 12
+                    std::cout &lt&lt a &lt&lt "\n";
+
+                    // Subtraction
+                    a = a - a; // 6 - 6 = 0
+
+                    // Multiplication
+                    a = 6;
+                    a = a * a; // 6 * 6 = 36
+
+                    // Division (integer division)
+                    a = 6;
+                    a = a / 4; // Result: 1 (fraction is discarded)
+
+                    // Modulo (remainder)
+                    a = 6;
+                    a = a % 4; // Result: 2
+                }
+            </code>
+        </pre>
+
+        <p>
+            These are the fundamental arithmetic operations in C++: <b>addition (+)</b>, <b>subtraction (-)</b>,
+            <b>multiplication (*)</b>,
+            <b>division</b> (/), and <b>modulo</b> (%).
+            They will be essential for writing your first simple programs.
+        </p>
+        </p>
+
+        <h2>How to Get Input from the User in C++</h2>
+        <p>
+            This is the last topic I'll cover in this article. Once you understand it, you'll be able to write simple
+            programs — still without logic statements, but we'll explore those in the next article. So, let's get to the
+            point.
+        </p>
+
+        <pre>
+            <code>
+                #include &ltiostream&gt
+
+                int main() {
+                    // Create a variable to store the user's input
+                    int a {0};
+
+                    // Get input from the user
+                    std::cin &gt&gt a;
+
+                    // Display the value entered by the user
+                    std::cout &lt&lt a;
+                }       
+            </code>
+        </pre>
+
+        <p>Explanation:</p>
+        <ul>
+            <li>
+                In this example, we use two functions you already know or have seen before:
+
+                <ul>
+                    <li>std::cout - prints output to the terminal.</li>
+                    <li>std::cin – gets input from the user via the terminal.</li>
+                </ul>
+            </li>
+
+            <li>
+                The &gt&gt operator with std::cin stores the entered value into the variable on the right-hand side.
+            </li>
+
+            <li>
+                In this example, we store the input in an int variable called a and then immediately print it back.
+            </li>
+        </ul>
+
+        <h2>Summary</h2>
+        <p>You know now:</p>
+        <ul>
+            <li>How to use basic input and output in C++.</li>
+            <li>What variables are and how to declare them.</li>
+            <li>How to perform basic arithmetic operations.</li>
+        </ul>
+        <p>With these fundamentals, you can already write small C++ programs.
+            The next step is to learn logic statements like if/else and loops — the building blocks of more complex
+            applications.
+            See you in the next part!
+        </p>
+    </main>
+
+    <button class="ReturnButton" id="return-articles-button" onclick="returntoMainPage()">
+        Return to main Page
+    </button>
+
+    <footer>
+        <b>I got title screen on CC0 of this article from</b> <a href="https://github.com/Benio101/cpp-logo"
+            target="_blank">this repo</a>.
+        <p>Date of made 8/9/25</p>
+    </footer>
+
+    <script src="../js/returntoMainPage.js"></script>
+</body>
+
+</html>
