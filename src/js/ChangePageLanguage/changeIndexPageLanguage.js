@@ -27,3 +27,12 @@ function changeLangtoEN() {
     ghAccountButton.innerText = "My Github account";
     selectLanguageSummary.innerText = "Select your language";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    let currentlang = localStorage.getItem("selectedLang");
+    if (currentlang == "pl") {
+        changeLangtoPL();
+    } else if (currentlang == "en") {
+        changeLangtoEN();
+    }
+});
